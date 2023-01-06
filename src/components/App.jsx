@@ -28,7 +28,7 @@ export class App extends React.Component {
   addContact = contact => {
     if (
       !this.state.contacts.find(
-        ({ name }) => name.toLocaleLowerCase() === contact.name.toLowerCase()
+        ({ name }) => name.toLowerCase() === contact.name.toLowerCase()
       )
     ) {
       this.setState(({ contacts }) => ({
